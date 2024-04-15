@@ -2,6 +2,7 @@ const input = document.querySelector("input");
 const div = document.querySelector("#boxes");
 const createBtn = document.querySelector("[data-create]");
 const destroyBtn = document.querySelector("[data-destroy]");
+let totalDimensions = 0;
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
@@ -21,8 +22,6 @@ createBtn.addEventListener("click", () => {
 destroyBtn.addEventListener("click", () => {
   div.innerHTML = "";
 });
-
-let totalDimensions = 0;
 
 function createBoxes(inputValue) {
   div.innerHTML = "";
