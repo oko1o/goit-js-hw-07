@@ -12,6 +12,7 @@ function getRandomHexColor() {
 createBtn.addEventListener("click", () => {
   const inputValue = input.value;
   if (inputValue >= 1 && inputValue <= 100) {
+    totalDimensions = 0;
     createBoxes(inputValue);
     input.value = "";
   }
